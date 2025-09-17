@@ -2,10 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/MyBlog/categories/</loc>
+    <loc>http://localhost:1313/MyBlog/tags/hugo/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/MyBlog/</loc>
+    <loc>http://localhost:1313/MyBlog/posts/hugo-tutorial/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/posts/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MyBlog/tags/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2024-01-16T14:30:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/tags/%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2024-01-15T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/tags/%E6%AC%A2%E8%BF%8E/</loc>
+    <lastmod>2024-01-15T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/posts/hello-world/</loc>
+    <lastmod>2024-01-15T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/</loc>
+    <lastmod>2024-01-15T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/categories/</loc>
   </url>
 </urlset>
