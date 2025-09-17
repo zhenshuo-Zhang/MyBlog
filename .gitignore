@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+
+# Hugo cache
+/resources/_gen/
+
+# Hugo build lock
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Node modules (if using npm)
+node_modules/
+
+# Logs
+*.log
