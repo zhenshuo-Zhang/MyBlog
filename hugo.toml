@@ -6,9 +6,11 @@ theme = 'simple-blog'
 
 [params]
 description = "欢迎来到我的个人博客，这里分享技术、生活和思考。"
-author = "博主"
-email = "your-email@example.com"
-github = "https://github.com/yourusername"
+author = "张振硕"
+email = "zhenshuo.zhang@example.com"
+github = "https://github.com/zhenshuo-zhang"
+twitter = "https://twitter.com/yourusername"
+linkedin = "https://linkedin.com/in/yourusername"
 
 [menu]
 [[menu.main]]
@@ -25,3 +27,7 @@ weight = 20
 name = "标签"
 url = "/tags"
 weight = 30
+
+# 分页设置
+paginate = 6
+paginatePath = "page"

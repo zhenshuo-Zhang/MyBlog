@@ -6,11 +6,11 @@ draft: false
 
 # 欢迎来到我的博客
 
-你好！欢迎访问我的个人博客。我是 [您的名字]，一名热爱技术的开发者。
+你好！欢迎访问我的个人博客。我是张振硕，一名热爱技术的开发者。
 
 ## 关于我
 
-我专注于 [您的专业领域]，喜欢分享技术经验和生活感悟。在这里，您可以找到：
+我专注于Web开发和移动应用开发，喜欢分享技术经验和生活感悟。在这里，您可以找到：
 
 - 📖 **技术文章** - 编程技巧、开发经验
 - 🎯 **项目分享** - 开源项目、个人作品
@@ -25,8 +25,8 @@ draft: false
 
 如果您有任何问题或建议，欢迎通过以下方式与我联系：
 
-- 📧 邮箱：[your-email@example.com]
-- 🐙 GitHub：[your-github-username]
-- 💼 LinkedIn：[your-linkedin-profile]
+- 📧 邮箱：zhenshuo.zhang@example.com
+- 🐙 GitHub：[zhenshuo-zhang](https://github.com/zhenshuo-zhang)
+- 💼 LinkedIn：[你的LinkedIn链接]
 
 感谢您的访问！

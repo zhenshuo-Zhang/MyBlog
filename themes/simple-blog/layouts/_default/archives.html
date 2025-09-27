@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container">
+    <h1 class="page-title">文章归档</h1>
+    
+    <div class="archives">
+        {{ range .Site.RegularPages.GroupByDate "2006年" }}
+        <div class="archive-year">
+            <h2>{{ .Key }}</h2>
+            <ul class="archive-list">
+                {{ range .Pages.ByDate.Reverse }}
+                <li class="archive-item">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "1月2日" }}</time>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
