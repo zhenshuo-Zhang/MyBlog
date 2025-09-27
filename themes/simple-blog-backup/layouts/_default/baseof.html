@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{{ .Site.BaseURL }}">首页</a></li>
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. 保留所有权利。</p>
+            <div class="social-links">
+                {{ if .Site.Params.github }}
+                <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                </a>
+                {{ end }}
+                {{ if .Site.Params.email }}
+                <a href="mailto:{{ .Site.Params.email }}">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@ baseURL = "https://zhenshuo-zhang.github.io/MyBlog/"
 canonifyURLs = true
 languageCode = 'zh-cn'
 title = '我的博客'
-theme = 'simple-blog'
+theme = 'PaperMod'
 
 [params]
 description = "欢迎来到我的个人博客，这里分享技术、生活和思考。"
@@ -11,6 +11,43 @@ email = "zhenshuo.zhang@example.com"
 github = "https://github.com/zhenshuo-zhang"
 twitter = "https://twitter.com/yourusername"
 linkedin = "https://linkedin.com/in/yourusername"
+
+# 网站图标
+favicon = "/favicon.ico"
+# 关键词
+keywords = ["博客", "技术", "生活", "思考", "Hugo", "PaperMod"]
+# 编辑链接
+editPost = { URL = "https://github.com/zhenshuo-Zhang/MyBlog/tree/main/content", Text = "建议编辑" }
+# 显示阅读时间
+ShowReadingTime = true
+# 显示字数统计
+ShowWordCount = true
+# 显示代码复制按钮
+ShowCodeCopyButtons = true
+# 显示面包屑导航
+ShowBreadCrumbs = true
+# 显示RSS链接
+ShowRssButtonInSectionTermList = true
+# 使用Hugo的图片处理
+UseHugoToc = true
+# 显示页面元信息
+ShowPostNavLinks = true
+# 显示返回顶部按钮
+ShowBackToTop = true
+# 显示搜索
+ShowSearch = true
+# 显示标签
+ShowTags = true
+# 显示分类
+ShowCategories = true
+# 显示系列
+ShowSeries = true
+# 显示作者
+ShowAuthor = true
+# 显示日期
+ShowDate = true
+# 显示修改日期
+ShowLastMod = true
 
 [menu]
 [[menu.main]]

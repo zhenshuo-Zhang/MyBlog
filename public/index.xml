@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>首页 on 我的博客</title>
     <link>http://localhost:1313/MyBlog/</link>
     <description>Recent content in 首页 on 我的博客</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Jan 2024 14:30:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/MyBlog/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,104 @@
       <link>http://localhost:1313/MyBlog/posts/hugo-tutorial/</link>
       <pubDate>Tue, 16 Jan 2024 14:30:00 +0800</pubDate>
       <guid>http://localhost:1313/MyBlog/posts/hugo-tutorial/</guid>
-      <description>&lt;h1 id=&#34;hugo-博客搭建完整指南&#34;&gt;Hugo 博客搭建完整指南&lt;/h1&gt;&#xA;&lt;p&gt;Hugo 是一个快速、现代的静态网站生成器，非常适合搭建个人博客。本文将详细介绍如何使用 Hugo 搭建一个美观的博客。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;极快的构建速度&lt;/strong&gt; - 构建大型网站只需几秒钟&lt;/li&gt;&#xA;&lt;li&gt;🎨 &lt;strong&gt;丰富的主题生态&lt;/strong&gt; - 数千个免费主题可供选择&lt;/li&gt;&#xA;&lt;li&gt;📝 &lt;strong&gt;Markdown 支持&lt;/strong&gt; - 使用 Markdown 编写内容&lt;/li&gt;&#xA;&lt;li&gt;🔧 &lt;strong&gt;高度可定制&lt;/strong&gt; - 灵活的模板系统&lt;/li&gt;&#xA;&lt;li&gt;🚀 &lt;strong&gt;部署简单&lt;/strong&gt; - 生成静态文件，易于部署&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;&#xA;&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;choco install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;创建新站点&#34;&gt;创建新站点&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 创建新的 Hugo 站点&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site my-blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 进入目录&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd my-blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 初始化 Git 仓库&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;选择主题&#34;&gt;选择主题&lt;/h2&gt;&#xA;&lt;p&gt;Hugo 有丰富的主题选择，推荐几个优秀的主题：&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;hugo-博客搭建完整指南&#34;&gt;Hugo 博客搭建完整指南&lt;/h1&gt;
+&lt;p&gt;Hugo 是一个快速、现代的静态网站生成器，非常适合搭建个人博客。本文将详细介绍如何使用 Hugo 搭建一个美观的博客。&lt;/p&gt;
+&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;⚡ &lt;strong&gt;极快的构建速度&lt;/strong&gt; - 构建大型网站只需几秒钟&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;丰富的主题生态&lt;/strong&gt; - 数千个免费主题可供选择&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;Markdown 支持&lt;/strong&gt; - 使用 Markdown 编写内容&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;高度可定制&lt;/strong&gt; - 灵活的模板系统&lt;/li&gt;
+&lt;li&gt;🚀 &lt;strong&gt;部署简单&lt;/strong&gt; - 生成静态文件，易于部署&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;
+&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;choco install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;创建新站点&#34;&gt;创建新站点&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 创建新的 Hugo 站点&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 进入目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 初始化 Git 仓库&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;选择主题&#34;&gt;选择主题&lt;/h2&gt;
+&lt;p&gt;Hugo 有丰富的主题选择，推荐几个优秀的主题：&lt;/p&gt;</description>
     </item>
     <item>
       <title>欢迎来到我的博客</title>
       <link>http://localhost:1313/MyBlog/posts/hello-world/</link>
       <pubDate>Mon, 15 Jan 2024 10:00:00 +0800</pubDate>
       <guid>http://localhost:1313/MyBlog/posts/hello-world/</guid>
-      <description>&lt;h1 id=&#34;欢迎来到我的博客&#34;&gt;欢迎来到我的博客！&lt;/h1&gt;&#xA;&lt;p&gt;很高兴您能访问我的个人博客。这里是我分享技术、生活和思考的地方。&lt;/p&gt;&#xA;&lt;h2 id=&#34;关于这个博客&#34;&gt;关于这个博客&lt;/h2&gt;&#xA;&lt;p&gt;这个博客使用 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 静态网站生成器构建，采用简洁美观的设计风格。我会在这里分享：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;💻 &lt;strong&gt;技术文章&lt;/strong&gt; - 编程、开发经验分享&lt;/li&gt;&#xA;&lt;li&gt;📚 &lt;strong&gt;学习笔记&lt;/strong&gt; - 读书心得、学习总结&lt;/li&gt;&#xA;&lt;li&gt;🌟 &lt;strong&gt;生活感悟&lt;/strong&gt; - 日常思考、生活体验&lt;/li&gt;&#xA;&lt;li&gt;🚀 &lt;strong&gt;项目分享&lt;/strong&gt; - 个人项目、开源贡献&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;开始写作&#34;&gt;开始写作&lt;/h2&gt;&#xA;&lt;p&gt;博客已经配置完成，您可以：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在 &lt;code&gt;content/posts/&lt;/code&gt; 目录下创建新的 Markdown 文件&lt;/li&gt;&#xA;&lt;li&gt;使用 Hugo 的模板语法编写文章&lt;/li&gt;&#xA;&lt;li&gt;添加标签和分类来组织内容&lt;/li&gt;&#xA;&lt;li&gt;使用 &lt;code&gt;hugo server&lt;/code&gt; 命令本地预览&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;代码示例&#34;&gt;代码示例&lt;/h2&gt;&#xA;&lt;p&gt;这里是一个简单的代码示例：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello_world&lt;/span&gt;():&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;欢迎来到我的博客！&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; __name__ &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hello_world()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(message)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;&#xA;&lt;p&gt;感谢您的访问！如果您有任何问题或建议，欢迎通过页面底部的联系方式与我交流。&lt;/p&gt;&#xA;&lt;p&gt;期待与您分享更多精彩内容！&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;欢迎来到我的博客&#34;&gt;欢迎来到我的博客！&lt;/h1&gt;
+&lt;p&gt;很高兴您能访问我的个人博客。这里是我分享技术、生活和思考的地方。&lt;/p&gt;
+&lt;h2 id=&#34;关于这个博客&#34;&gt;关于这个博客&lt;/h2&gt;
+&lt;p&gt;这个博客使用 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 静态网站生成器构建，采用简洁美观的设计风格。我会在这里分享：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;💻 &lt;strong&gt;技术文章&lt;/strong&gt; - 编程、开发经验分享&lt;/li&gt;
+&lt;li&gt;📚 &lt;strong&gt;学习笔记&lt;/strong&gt; - 读书心得、学习总结&lt;/li&gt;
+&lt;li&gt;🌟 &lt;strong&gt;生活感悟&lt;/strong&gt; - 日常思考、生活体验&lt;/li&gt;
+&lt;li&gt;🚀 &lt;strong&gt;项目分享&lt;/strong&gt; - 个人项目、开源贡献&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;开始写作&#34;&gt;开始写作&lt;/h2&gt;
+&lt;p&gt;博客已经配置完成，您可以：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;content/posts/&lt;/code&gt; 目录下创建新的 Markdown 文件&lt;/li&gt;
+&lt;li&gt;使用 Hugo 的模板语法编写文章&lt;/li&gt;
+&lt;li&gt;添加标签和分类来组织内容&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;hugo server&lt;/code&gt; 命令本地预览&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;代码示例&#34;&gt;代码示例&lt;/h2&gt;
+&lt;p&gt;这里是一个简单的代码示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello_world&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;欢迎来到我的博客！&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; __name__ &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hello_world()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(message)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;感谢您的访问！如果您有任何问题或建议，欢迎通过页面底部的联系方式与我交流。&lt;/p&gt;
+&lt;p&gt;期待与您分享更多精彩内容！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:1313/MyBlog/about/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/MyBlog/about/</guid>
+      <description>&lt;h1 id=&#34;关于我&#34;&gt;关于我&lt;/h1&gt;
+&lt;p&gt;你好！欢迎来到我的个人博客。&lt;/p&gt;
+&lt;h2 id=&#34;我是谁&#34;&gt;我是谁&lt;/h2&gt;
+&lt;p&gt;我是一名软件工程师，专注于Web开发和移动应用开发。我热爱技术，喜欢探索新的编程语言和框架，并乐于分享我的知识和经验。&lt;/p&gt;
+&lt;h2 id=&#34;技能栈&#34;&gt;技能栈&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;编程语言&lt;/strong&gt;: JavaScript, Python, Go, Java&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前端技术&lt;/strong&gt;: React, Vue, HTML/CSS, TypeScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;后端技术&lt;/strong&gt;: Node.js, Express, Django, Spring Boot&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库&lt;/strong&gt;: MySQL, PostgreSQL, MongoDB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工具&lt;/strong&gt;: Git, Docker, Kubernetes, AWS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;兴趣爱好&lt;/h2&gt;
+&lt;p&gt;除了编程和技术，我还对以下领域感兴趣：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📚 阅读技术书籍和博客&lt;/li&gt;
+&lt;li&gt;🏃‍♂️ 跑步和健身&lt;/li&gt;
+&lt;li&gt;🎵 音乐和电影&lt;/li&gt;
+&lt;li&gt;🌍 旅行和探索新地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
+&lt;p&gt;如果你有任何问题或想与我交流，可以通过以下方式联系我：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📧 邮箱: &lt;a href=&#34;mailto:zhenshuo.zhang@example.com&#34;&gt;zhenshuo.zhang@example.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐙 GitHub: &lt;a href=&#34;https://github.com/zhenshuo-zhang&#34;&gt;zhenshuo-zhang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💼 LinkedIn: [你的LinkedIn链接]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感谢你的访问！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

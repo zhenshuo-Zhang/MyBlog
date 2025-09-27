@@ -32,6 +32,12 @@
     <loc>http://localhost:1313/MyBlog/posts/hello-world/</loc>
     <lastmod>2024-01-15T10:00:00+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/MyBlog/about/</loc>
+    <lastmod>2024-01-15T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MyBlog/archives/</loc>
+    <lastmod>2024-01-15T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/MyBlog/</loc>
     <lastmod>2024-01-15T00:00:00+08:00</lastmod>
   </url><url>
